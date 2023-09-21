@@ -21,6 +21,6 @@ public record RectangularPrismRoom(int length, int width, int height) implements
     }
 
     private int getSizeOfSmallestSide() {
-        return Collections.min(Arrays.asList(length, width, height));
+        return Collections.min(Arrays.asList(length * width, width * height, height * length));
     }
 }

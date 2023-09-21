@@ -59,9 +59,9 @@ class RoomManagerTest {
         BigInteger totalSurfaceArea = roomManager.calculateTotalSurfaceArea(roomOccurrenceMap);
 
         // then
-        // The total surface area should be the sum of cubeShapedRoom's surface area (7*5)=35
-        // and rectangularPrismRoom's surface area (2*7*5+2*5*2+2*2*7+min(7,5,2))=120.
-        assertEquals(new BigInteger("155"), totalSurfaceArea);
+        // The total surface area should be the sum of cubeShapedRoom's surface area (7*5*5)=175
+        // and rectangularPrismRoom's surface area (2*7*5+2*5*2+2*2*7+10)=128.
+        assertEquals(new BigInteger("303"), totalSurfaceArea);
     }
 
     @Test

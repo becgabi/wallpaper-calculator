@@ -54,7 +54,7 @@ class RoomManagerIntegrationTest {
         BigInteger surfaceArea = manager.calculateTotalSurfaceArea(roomOccurrenceMap);
 
         // then
-        assertEquals(BigInteger.valueOf(1_444_949L), surfaceArea);
+        assertEquals(BigInteger.valueOf(1_592_486L), surfaceArea);
     }
 
     @Test

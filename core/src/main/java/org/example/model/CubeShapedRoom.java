@@ -12,7 +12,7 @@ public record CubeShapedRoom(int length) implements Room, Comparable<CubeShapedR
      */
     @Override
     public int getSurfaceArea() {
-        return 7 * length;
+        return 7 * length * length;
     }
 
     @Override
